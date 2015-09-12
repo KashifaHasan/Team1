@@ -137,6 +137,11 @@ public class Base {
 
     }
 
+    //iFrame Handle
+    public void iframeHandle(WebElement element){
+        driver.switchTo().frame(element);
+    }
+
     }
 
 
