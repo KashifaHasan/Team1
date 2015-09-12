@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/Chase/Chase.iml" filepath="$PROJECT_DIR$/Chase/Chase.iml" />
+      <module fileurl="file://$PROJECT_DIR$/ChaseMortgage/Chase.iml" filepath="$PROJECT_DIR$/ChaseMortgage/Chase.iml" />
+      <module fileurl="file://$PROJECT_DIR$/FacebookApp/FacebookApp.iml" filepath="$PROJECT_DIR$/FacebookApp/FacebookApp.iml" />
+      <module fileurl="file://$PROJECT_DIR$/FreshDirect/FreshDirect.iml" filepath="$PROJECT_DIR$/FreshDirect/FreshDirect.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Generic/Generic.iml" filepath="$PROJECT_DIR$/Generic/Generic.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Gmail/Gmail.iml" filepath="$PROJECT_DIR$/Gmail/Gmail.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Team1.iml" filepath="$PROJECT_DIR$/Team1.iml" />
+    </modules>
+  </component>
+</project>
