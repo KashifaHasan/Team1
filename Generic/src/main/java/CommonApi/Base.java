@@ -136,6 +136,9 @@ public class Base {
         driver.findElement(By.cssSelector(locator)).sendKeys(value, Keys.ENTER);
 
     }
+    public void doesntdoAnything(){
+        //this method is good for nothing :D
+    }
 
     //iFrame Handle
     public void iframeHandle(WebElement element){
