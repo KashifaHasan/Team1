@@ -13,7 +13,7 @@
     <test name="Home Page">
         <classes>
             <class name="MortgageCalculator"/>
-            <class name="ChaseSearch" ></class>
+            <!--<class name="ChaseSearch" ></class>-->
 
 
         </classes>

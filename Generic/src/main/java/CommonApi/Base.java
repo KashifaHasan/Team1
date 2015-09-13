@@ -24,13 +24,16 @@ import java.net.URL;
 import java.util.ArrayList;
 import java.util.List;
 import java.util.concurrent.TimeUnit;
+import java.util.logging.Logger;
+
+
 /**
  * Created by malihahasantuba on 9/1/15.
  */
 public class Base {
 
     public WebDriver driver = null;
-
+    public Logger log = Logger.getLogger(Base.class.getName()); //Understanding this code
     @Parameters({"useSauceLab","userName", "key","appUrl","os","browserName","browserVersion"})
     @BeforeMethod
     public void setUp(boolean useSauceLab,String userName,String key,String appUrl, String os,
@@ -40,6 +43,7 @@ public class Base {
             getSauceLabDriver(userName, key, os, browserName, browserVersion);
         }else{
             getLocalDriver(os, browserName);
+            log.info("Test Case Running on the local driver.");
         }
 
         driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
@@ -50,8 +54,9 @@ public class Base {
 
     @AfterMethod
     public void cleanUp()throws InterruptedException{
-        sleepfor(2);
-        driver.quit();
+        sleepfor(6);
+        //driver.quit();
+        //log.info("Driver is quitting.");
     }
     //get local driver
     public WebDriver getLocalDriver(String os, String browserName){
@@ -136,11 +141,13 @@ public class Base {
         driver.findElement(By.cssSelector(locator)).sendKeys(value, Keys.ENTER);
 
     }
-    public void doesntdoAnything(){
-        //this method is good for nothing :D
+
+    //2 types of iFrame Handle
+    public void iframeHandle(int fvalue){
+         driver.switchTo().frame(fvalue);
     }
 
-    //iFrame Handle
+
     public void iframeHandle(WebElement element){
         driver.switchTo().frame(element);
     }

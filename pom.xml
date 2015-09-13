@@ -13,7 +13,6 @@
         <module>Chase</module>
         <module>FacebookApp</module>
         <module>Gmail</module>
-        <module>FreshNSave</module>
         <module>FreshDirect</module>
     </modules>
     <dependencyManagement>
@@ -37,12 +36,14 @@
             <version>6.9.6</version>
         </dependency>
 
-<!--<This is for adding the datareader dependency>-->
+    <!--<This is for adding the datareader dependency>-->
         <dependency>
             <groupId>org.apache.poi</groupId>
             <artifactId>poi</artifactId>
             <version>3.13-beta1</version>
         </dependency>
+
+
 
 
     </dependencies>

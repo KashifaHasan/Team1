@@ -23,6 +23,8 @@ public class MortgageCalculator extends Base{
         getElementByCss("#insurance", "5");
         //driver.findElement(By.cssSelector("#loan_term")).click();
         clickByXpath(".//*[@id='loan_term']/option[3]");
+        sleepfor(4);
+        log.info("Test case run successfully");
         //Than we need to click on the dropdown menu box to select the years we want to click.
         //OR How to get the locators of dropdown menu?
         //How to use Asserts with WebElements?
