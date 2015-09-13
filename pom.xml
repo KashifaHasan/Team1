@@ -50,5 +50,18 @@
 
 
 </dependencyManagement>
+    <profiles>
+        <profile>
+            <id>all</id>
+            <modules>
+                <module>Generic</module>
+                <module>Chase</module>
+            </modules>
+
+            <activation>
+                <activeByDefault>true</activeByDefault>
+            </activation>
+        </profile>
+    </profiles>
 
 </project>

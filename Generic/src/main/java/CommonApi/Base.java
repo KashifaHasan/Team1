@@ -102,12 +102,12 @@ public class Base {
         Thread.sleep(initvalue);
     }
 
-    public void getElementByCss(String locator, String text){
+    public void typetByCss(String locator, String text){
         driver.findElement(By.cssSelector(locator)).clear();
         driver.findElement(By.cssSelector(locator)).sendKeys(text);
     }
 
-    public void getElementByXpath(String locator,String text){
+    public void typeByXpath(String locator,String text){
         driver.findElement(By.xpath(locator)).sendKeys(text);
     }
 
