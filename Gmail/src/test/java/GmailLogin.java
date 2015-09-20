@@ -16,9 +16,9 @@ public class GmailLogin extends Base {
 
 @Test
     public void logintoGmail() throws Exception{
-        getElementByCss("#Email", "pntseleniumtests@gmail.com");
+        typeByCss("#Email", "pntseleniumtests@gmail.com");
         clickByCss("#next");
-        getElementByCss("#Passwd", "test1234567890");
+        typeByCss("#Passwd", "test1234567890");
         clickByCss("#signIn");
         clickByXpath(".//*[@id=':4s']/div/div");
         driver.findElement(By.xpath(".//*[@id=':9v']")).sendKeys("kashifagirl@yahoo.com");

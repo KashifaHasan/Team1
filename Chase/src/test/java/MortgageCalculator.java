@@ -13,14 +13,14 @@ public class MortgageCalculator extends Base{
 
     public void mortgageTest()throws InterruptedException{
         getTitle();
-        getElementByCss("#monthly_income", "25000");
-        getElementByCss("#monthly_expenses", "15000");
+        typeByCssThenEnter("#monthly_income", "25000");
+        typeByCssThenEnter("#monthly_expenses", "15000");
         sleepfor(2);
-        getElementByCss("#down_payment", "50");
-        getElementByCss("#interest", "10");
+        typeByCss("#down_payment", "50");
+        typeByCss("#interest", "10");
         sleepfor(2);
-        getElementByCss("#property_taxes", "10");
-        getElementByCss("#insurance", "5");
+        typeByCss("#property_taxes", "10");
+        typeByCssThenEnter("#insurance", "5");
         //driver.findElement(By.cssSelector("#loan_term")).click();
         clickByXpath(".//*[@id='loan_term']/option[3]");
         sleepfor(4);

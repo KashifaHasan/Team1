@@ -27,8 +27,12 @@
         <module name="FacebookApp" />
         <module name="FreshDirect" />
         <module name="FreshNSave" />
+        <module name="Geico" />
+        <module name="GeicoInsurance" />
         <module name="Generic" />
         <module name="Gmail" />
+        <module name="Outlook" />
+        <module name="TimeWarner" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
@@ -37,9 +41,13 @@
       <module name="FacebookApp" target="1.5" />
       <module name="FreshDirect" target="1.5" />
       <module name="FreshNSave" target="1.5" />
+      <module name="Geico" target="1.5" />
+      <module name="GeicoInsurance" target="1.5" />
       <module name="Generic" target="1.5" />
       <module name="Gmail" target="1.5" />
+      <module name="Outlook" target="1.5" />
       <module name="Team1" target="1.5" />
+      <module name="TimeWarner" target="1.5" />
     </bytecodeTargetLevel>
   </component>
 </project>

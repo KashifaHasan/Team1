@@ -23,6 +23,7 @@ import java.io.IOException;
 import java.net.URL;
 import java.util.ArrayList;
 import java.util.List;
+import java.util.Random;
 import java.util.concurrent.TimeUnit;
 import java.util.logging.Logger;
 
@@ -55,8 +56,8 @@ public class Base {
     @AfterMethod
     public void cleanUp()throws InterruptedException{
         sleepfor(6);
-        //driver.quit();
-        //log.info("Driver is quitting.");
+        driver.quit();
+        log.info("Driver is quitting.");
     }
     //get local driver
     public WebDriver getLocalDriver(String os, String browserName){
@@ -102,11 +103,15 @@ public class Base {
         Thread.sleep(initvalue);
     }
 
-    public void typetByCss(String locator, String text){
-        driver.findElement(By.cssSelector(locator)).clear();
+    public void typeByCss(String locator, String text){
+        //driver.findElement(By.cssSelector(locator)).clear();
         driver.findElement(By.cssSelector(locator)).sendKeys(text);
     }
 
+    public void clearandtypeByCss(String locator, String text){
+        driver.findElement(By.cssSelector(locator)).clear();
+        driver.findElement(By.cssSelector(locator)).sendKeys(text);
+    }
     public void typeByXpath(String locator,String text){
         driver.findElement(By.xpath(locator)).sendKeys(text);
     }
@@ -136,10 +141,16 @@ public class Base {
     public void clickByXpath(String locator){driver.findElement(By.xpath(locator)).click();}
 
     public void getTitle(){driver.getTitle();}
+    public void waitUntilVisible(){
+
+    }
 
     public void typeByCssThenEnter(String locator, String value ) {
         driver.findElement(By.cssSelector(locator)).sendKeys(value, Keys.ENTER);
+    }
 
+    public void typeByXpathThenEnter(String locator,String value){
+        driver.findElement(By.xpath(locator)).sendKeys(value,Keys.ENTER);
     }
 
     //2 types of iFrame Handle
@@ -152,7 +163,9 @@ public class Base {
         driver.switchTo().frame(element);
     }
 
+
     }
+
 
 
 

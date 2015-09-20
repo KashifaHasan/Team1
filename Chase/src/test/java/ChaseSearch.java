@@ -17,7 +17,7 @@ public class ChaseSearch extends ChaseBase {
 
 
     String path = "Chase/Data/ChaseSearch.xls";
-    @Test
+    //@Test
     public void searchItems() throws IOException {
 
         String[][] itemLocator = dr.fileReader(path);

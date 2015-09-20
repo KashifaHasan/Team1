@@ -14,6 +14,9 @@
         <module>FacebookApp</module>
         <module>Gmail</module>
         <module>FreshDirect</module>
+        <module>Outlook</module>
+        <module>TimeWarner</module>
+        <module>GeicoInsurance</module>
     </modules>
     <dependencyManagement>
     <dependencies>
@@ -56,12 +59,65 @@
             <modules>
                 <module>Generic</module>
                 <module>Chase</module>
+                <module>FacebookApp</module>
+                <module>FreshDirect</module>
+                <module>Gmail</module>
+                <module>Outlook</module>
+                <module>TimeWarner</module>
             </modules>
-
             <activation>
                 <activeByDefault>true</activeByDefault>
             </activation>
         </profile>
+
+        <profile>
+            <id>ChaseApp</id>
+            <modules>
+                <module>Generic</module>
+                <module>Chase</module>
+            </modules>
+        </profile>
+
+        <profile>
+            <id>FacebookApp</id>
+            <modules>
+                <module>Generic</module>
+                <module>FacebookApp</module>
+            </modules>
+        </profile>
+
+        <profile>
+            <id>FreshDirectkApp</id>
+            <modules>
+                <module>Generic</module>
+                <module>FreshDirect</module>
+            </modules>
+        </profile>
+
+        <profile>
+            <id>OutlookApp</id>
+            <modules>
+                <module>Generic</module>
+                <module>Outlook</module>
+            </modules>
+        </profile>
+
+        <!--<profile>-->
+            <!--<id>GmailApp</id>-->
+            <!--<modules>-->
+                <!--<module>Generic</module>-->
+                <!--<module>Gmail</module>-->
+            <!--</modules>-->
+        <!--</profile>-->
+
+        <profile>
+            <id>TimeWarnerApp</id>
+            <modules>
+                <module>Generic</module>
+                <module>TimeWarner</module>
+            </modules>
+        </profile>
+
     </profiles>
 
 </project>
